@@ -1,4 +1,4 @@
-'#'Question)1=> Explain what the simple List component does.
+### Question)1=> Explain what the simple List component does.
 
 Answer 1: The List component is a React component that displays a list of items, where each item is represented by a SingleListItem component.
 
@@ -10,7 +10,7 @@ Finally, the List component renders a ListContainer component that wraps all of 
 
 Overall, the List component is a simple example of how to render a list of items in React, and how to handle user interactions with those items.
 
-Question)2=> What problems / warnings are there with code?
+### Question)2=> What problems / warnings are there with code?
 
 Answer 2:  a. useState syntax error
 
@@ -59,7 +59,7 @@ allocated to default props
 h. We should have different different componenets. It increases code reusability , readability .
 
 
-Q3) Please fix, optimize, and/or modify the component as much as you think is necessary.
+### Q3) Please fix, optimize, and/or modify the component as much as you think is necessary.
 
 Answer) i have made different different components . you can see by going inside src/components
 List component is the main component . SingleListItem and ListContainer are used inside List component.
