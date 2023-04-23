@@ -69,7 +69,7 @@ here is the code of EverythingInone.js component
 
 
 
-import React, { useState, useEffect, memo } from "react";
+``` import React, { useState, useEffect, memo } from "react";
 import PropTypes from "prop-types";
 
 
@@ -141,7 +141,7 @@ WrappedListComponent.defaultProps = {
 
 const List = memo(WrappedListComponent);
 
-export default List;
+export default List; ```
 
 
 
