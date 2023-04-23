@@ -1,3 +1,5 @@
+### deploy link  = https://shivshakti-frontend.vercel.app/
+
 ### Question)1=> Explain what the simple List component does.
 
 Answer 1: The List component is a React component that displays a list of items, where each item is represented by a SingleListItem component.
