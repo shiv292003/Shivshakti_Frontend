@@ -14,7 +14,7 @@ Question)2=> What problems / warnings are there with code?
 
 Answer 2:  a. useState syntax error
 
-const[selectedIndex,setSelectedIndex]=useState();
+```const[selectedIndex,setSelectedIndex]=useState();```
 
 b. isSelected should be equal to index 
 
@@ -27,7 +27,7 @@ b. isSelected should be equal to index
 
 c. array should be replaced with arrayOf & shapeOf should be replaced with shape property.
 
-WrappedListComponent.propTypes = { items: PropTypes.array(PropTypes.shapeOf({ text: PropTypes.string.isRequired, })), };
+```WrappedListComponent.propTypes = { items: PropTypes.array(PropTypes.shapeOf({ text: PropTypes.string.isRequired, })), }; ```
 
 d. onclickHandler could be called as a arrow function
 
@@ -45,16 +45,16 @@ on array
 
 f. handleClick function should be right.
 
-    const handleClick = (index) => {
+   ``` const handleClick = (index) => {
     selectedIndex === index ? setSelectedIndex(null) : setSelectedIndex(index);
-  };
+  }; ```
 
 g. null as a default props:- We should not use null as default props there must be some valid value 
 allocated to default props
 
-    List.defaultProps = {
+   ``` List.defaultProps = {
   items: [{ text: "I" }, { text: "am" }, { text: "placed" }, { text: "hello" }],
-};
+};```
 
 h. We should have different different componenets. It increases code reusability , readability .
 
@@ -69,7 +69,9 @@ here is the code of EverythingInone.js component
 
 
 
-``` import React, { useState, useEffect, memo } from "react";
+``` 
+//in one component
+import React, { useState, useEffect, memo } from "react";
 import PropTypes from "prop-types";
 
 
@@ -141,7 +143,7 @@ WrappedListComponent.defaultProps = {
 
 const List = memo(WrappedListComponent);
 
-export default List; ```
+export default List; 
 
 
 
