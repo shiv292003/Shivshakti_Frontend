@@ -27,11 +27,11 @@ b. isSelected should be equal to index
 
 c. array should be replaced with arrayOf & shapeOf should be replaced with shape property.
 
-```WrappedListComponent.propTypes = { items: PropTypes.array(PropTypes.shapeOf({ text: PropTypes.string.isRequired, })), }; ```
+```WrappedListComponent.propTypes = { items: PropTypes.array(PropTypes.shapeOf({ text: PropTypes.string.isRequired, })), }; 
 
 d. onclickHandler could be called as a arrow function
 
-onClick={()=>onClickHandler(index)}
+```onClick={()=>onClickHandler(index)}
 
 e.  Unique key to props , It is recommended to provide unique key to props while using map function 
 on array
@@ -47,14 +47,14 @@ f. handleClick function should be right.
 
    ``` const handleClick = (index) => {
     selectedIndex === index ? setSelectedIndex(null) : setSelectedIndex(index);
-  }; ```
+  }; 
 
 g. null as a default props:- We should not use null as default props there must be some valid value 
 allocated to default props
 
    ``` List.defaultProps = {
   items: [{ text: "I" }, { text: "am" }, { text: "placed" }, { text: "hello" }],
-};```
+};
 
 h. We should have different different componenets. It increases code reusability , readability .
 
