@@ -67,16 +67,14 @@ List component is the main component . SingleListItem and ListContainer are used
 Also i have Implemented all the errors in one component by the name of EverythingInone.js component.
 here is the code of EverythingInone.js component 
 
-//in one component only
+
 
 import React, { useState, useEffect, memo } from "react";
 import PropTypes from "prop-types";
 
-// Single List Item
+
 const WrappedSingleListItem = ({ index, isSelected, onClickHandler, text }) => {
-//   const handleClick = () => {
-//     onClickHandler(index);
-//   };
+
   return (
     <li
       style={{ backgroundColor: isSelected ? "green" : "red" }}
